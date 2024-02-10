@@ -1,0 +1,46 @@
+.startArea {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap:20px;
+  .logo{
+    /* border: 1px solid blue; */
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    img{
+      /* border: 1px solid rgb(141, 236, 15); */
+      border-radius: 3px;
+      width: 80px;
+      height: 40px;
+      margin-right: 10px;
+    }
+    
+  }
+  h1, h4{
+    /* border: 1px solid green; */
+    text-align: center;
+    margin: 2px;
+  }
+}
+
+button {
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+  border-radius: 30px;
+  border: 1px solid #ff006fcb;
+  padding: 15px 30px;
+  font-size: 20px;
+  background-color: #ff006fcb;
+  /* background-color: darken(#ff006e, 3%); */
+  color: #fff;
+  margin-top: 20px;
+  cursor: pointer;
+  &:hover {
+    box-sizing: border-box;
+    border: 1px solid black;
+  }
+}

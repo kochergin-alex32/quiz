@@ -1,6 +1,7 @@
 import React from 'react';
 import Result from '../Result/Result';
 import Game from '../Game/Game';
+import StartGame from '../StartGame/StartGame';
 import './App.css';
 // import questions1 from '../assetc/questions1';
 
@@ -48,8 +49,9 @@ correct: 2,
 function App() {
     // const questions = [... questions1]
     console.log(questions);
-
-
+    
+    const [startOn, setStartOn]=React.useState(false);
+    console.log(startOn);
     // этот стейт хранит в себе шаг, т.е. на каком из вопросов мы находимся
     const [step, setStep] = React.useState(0);
     const [correct, setCorrect] = React.useState(0);
@@ -65,9 +67,14 @@ function App() {
     // console.log(question);
 return (
 <div className="App">
-    {
+    {/* {
     step != questions.length ? <Game step={step} question={question} onClickVariant={onClickVariant} questions={questions}/> : <Result correct={correct} questions={questions}/> 
+    } */}
+
+    {
+         startOn ?(step != questions.length ? <Game step={step} question={question} onClickVariant={onClickVariant} questions={questions}/> : <Result correct={correct} questions={questions} />): <StartGame startOn={startOn} setStartOn={setStartOn} />
     }
+   
 
 </div>
 );
