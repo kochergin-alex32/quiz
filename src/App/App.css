@@ -128,7 +128,7 @@ body {
     }
   }
 }
-@media (max-width: 770px) {
+@media (max-width: 870px) {
   .App{
     width: 600px;
     padding-top: 12px;
@@ -141,6 +141,7 @@ body {
  
   .App{
     width: 250px;
+    margin-top: -50px;
     margin-left: -8px;
   }
   

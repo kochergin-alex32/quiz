@@ -44,7 +44,7 @@ button {
     border: 1px solid black;
   }
 }
-@media (max-width: 770px) {
+@media (max-width: 870px) {
   .logo p{
     font-size: 15px;
     /* font-weight: bold; */
