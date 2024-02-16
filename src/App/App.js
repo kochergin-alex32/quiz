@@ -72,7 +72,7 @@ return (
     } */}
 
     {
-         startOn ?(step != questions.length ? <Game step={step} question={question} onClickVariant={onClickVariant} questions={questions}/> : <Result correct={correct} questions={questions} />): <StartGame startOn={startOn} setStartOn={setStartOn} />
+         startOn ?(step != questions.length ? <Game step={step} question={question} onClickVariant={onClickVariant} questions={questions}/> : <Result correct={correct} questions={questions} step={step} setStep={setStep} />): <StartGame startOn={startOn} setStartOn={setStartOn} />
     }
    
 

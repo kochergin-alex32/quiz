@@ -44,3 +44,17 @@ button {
     border: 1px solid black;
   }
 }
+@media (max-width: 770px) {
+  .logo p{
+    font-size: 15px;
+    /* font-weight: bold; */
+  }
+}
+@media (max-width: 450px) {
+ 
+  .logo p{
+    font-size: 12px;
+    /* font-weight: bold; */
+  }
+  
+}

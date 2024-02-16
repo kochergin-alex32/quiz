@@ -9,7 +9,11 @@ function Game({step, question, onClickVariant, questions }) {
     // const percent = step/questions.
     return (
     <>
-    {/* не работает чиним */}
+     <div className="back">
+
+            <a href='/'>&#10006;</a>
+    </div>
+    
     <div className="progress">
     <div style={
         // стандартная форма записи вывода переменной

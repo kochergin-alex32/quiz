@@ -18,7 +18,8 @@ body {
 .App {
   width: 500px;
   border-radius: 30px;
-  padding: 40px;
+  padding:  40px;
+  padding-top: 20px;
   background-color: #fff;
   position: relative;
 
@@ -127,3 +128,21 @@ body {
     }
   }
 }
+@media (max-width: 770px) {
+  .App{
+    width: 600px;
+    padding-top: 12px;
+    padding-bottom: 40px;
+    margin-bottom: -25px;
+  }
+  
+}
+@media (max-width: 450px) {
+ 
+  .App{
+    width: 250px;
+    margin-left: -8px;
+  }
+  
+}
+
